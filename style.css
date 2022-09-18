@@ -9,6 +9,7 @@
 body {
   margin: 2rem 3rem;
   font-family: Epilogue, sans-serif;
+  background-color: hsl(0, 0%, 98%);
 }
 
 nav,
@@ -88,14 +89,18 @@ footer {
 }
 
 .drop_down {
+  cursor: pointer;
   display: flex;
-  grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
 }
 
 .drop_down img {
   height: fit-content;
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
+}
+
+.drop_down:hover {
+  color: hsl(0, 0%, 8%);
 }
 
 .navbar_right #register {
@@ -105,4 +110,69 @@ footer {
   text-align: center;
   border-radius: 15px;
   align-items: center;
+}
+
+.navbar_right #register:hover {
+  border: 3px solid hsl(0, 0%, 8%);
+}
+
+a {
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.left_container a h3 {
+  cursor: pointer;
+  border: 2px solid hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  width: 30%;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 8rem;
+}
+
+.left_container a h3:hover {
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 98%);
+}
+
+.todo,
+.calendar,
+.reminders,
+.planning {
+  display: flex;
+  gap: 1rem;
+}
+
+.subs {
+  display: flex;
+  gap: 3rem;
+}
+
+.sub_features,
+.sub_company {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: fit-content;
+  padding: 1.5rem;
+  gap: 1rem;
+  box-shadow: 1px 0px 20px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  display: none;
+}
+
+.sub_features {
+  margin-left: 6rem;
+}
+
+.sub_company {
+  height: fit-content;
 }

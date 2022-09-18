@@ -26,22 +26,53 @@
     <nav class="navbar">
       <div class="navbar_left">
         <div class="navbar_logo"><img src="images/logo.svg" alt="snap" /></div>
-        <div class="drop_down">
+        <div class="drop_down" id="features">
           <h4>Features</h4>
-          <img src="images/icon-arrow-down.svg" alt="arrow down" />
+          <img
+            src="images/icon-arrow-down.svg"
+            alt="arrow down"
+            id="arrow_down"
+          />
         </div>
-        <div class="drop_down">
+        <div class="drop_down" id="company">
           <h4>Company</h4>
           <img src="images/icon-arrow-down.svg" alt="arrow down" />
         </div>
         <h4>Career</h4>
-        <h4>About</h4>
+        <a href="https://github.com/Muizah?tab=repositories"><h4>About</h4></a>
       </div>
       <div class="navbar_right">
-        <h4>Login</h4>
-        <h4 id="register">Register</h4>
+        <a href="https://github.com/Muizah?tab=repositories"><h4>Login</h4></a>
+        <a href="https://github.com/Muizah?tab=repositories"
+          ><h4 id="register">Register</h4></a
+        >
       </div>
     </nav>
+    <div class="subs">
+      <div class="sub_features" id="sub_features">
+        <div class="todo">
+          <img src="images/icon-todo.svg" />
+          <h5>Todo List</h5>
+        </div>
+        <div class="calendar">
+          <img src="images/icon-calendar.svg" />
+          <h5>Calendar</h5>
+        </div>
+        <div class="reminders">
+          <img src="images/icon-reminders.svg" />
+          <h5>Reminders</h5>
+        </div>
+        <div class="planning">
+          <img src="images/icon-planning.svg" />
+          <h5>Planning</h5>
+        </div>
+      </div>
+      <div class="sub_company" id="sub_company">
+        <h5>History</h5>
+        <h5>Our Team</h5>
+        <h5>Blog</h5>
+      </div>
+    </div>
 
     <div class="container">
       <div class="left_container">
@@ -50,7 +81,10 @@
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
         </p>
-        <button><h3>Learn more</h3></button>
+        <a href="https://www.google.com/">
+          <h3>Learn more</h3>
+        </a>
+
         <div class="container_logos">
           <img src="images/client-databiz.svg" alt="databiz" />
           <img src="images/client-audiophile.svg" alt="audiophile" />
@@ -76,4 +110,5 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
 </html>
