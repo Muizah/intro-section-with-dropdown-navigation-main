@@ -23,6 +23,7 @@ nav,
 .navbar {
   justify-content: space-between;
   color: hsl(0, 0%, 41%);
+  align-items: center;
 }
 
 .navbar_logo {
@@ -35,7 +36,7 @@ nav,
 
 .navbar_right {
   gap: 3rem;
-  align-items: start;
+  align-items: center;
 }
 
 .container {
@@ -92,6 +93,7 @@ footer {
   cursor: pointer;
   display: flex;
   gap: 0.5rem;
+  position: relative;
 }
 
 .drop_down img {
@@ -161,18 +163,17 @@ a:hover {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: fit-content;
   padding: 1.5rem;
   gap: 1rem;
   box-shadow: 1px 0px 20px rgb(0 0 0 / 20%);
   border-radius: 10px;
   display: none;
-}
-
-.sub_features {
-  margin-left: 6rem;
+  position: absolute;
+  top: 20px;
+  right: 0;
 }
 
 .sub_company {
   height: fit-content;
+  min-width: 120px;
 }
