@@ -41,3 +41,18 @@ document.addEventListener("mouseout", function (event) {
   }
   console.log(isClickOutsideFeaturesBtn, isClickOutsideFeaturesDropdown);
 });
+
+var heroImage = document.querySelector("#heroImage");
+changeHeroByScreenSize();
+
+function changeHeroByScreenSize() {
+  var mobileImage = "/images/image-hero-mobile.png";
+  var desktopImage = "/images/image-hero-desktop.png";
+  if (window.innerWidth <= 400) {
+    heroImage.setAttribute("src", mobileImage);
+  } else {
+    heroImage.setAttribute("src", desktopImage);
+  }
+}
+
+window.addEventListener("resize", changeHeroByScreenSize);
