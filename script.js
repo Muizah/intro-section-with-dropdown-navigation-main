@@ -46,10 +46,8 @@ var heroImage = document.querySelector("#heroImage");
 changeHeroByScreenSize();
 
 function changeHeroByScreenSize() {
-  var mobileImage =
-    "https://github.com/Muizah/intro-section-with-dropdown-navigation-main/blob/master/images/image-hero-mobile.png";
-  var desktopImage =
-    "https://github.com/Muizah/intro-section-with-dropdown-navigation-main/blob/master/images/image-hero-desktop.png";
+  var mobileImage = "images/image-hero-mobile.png";
+  var desktopImage = "images/image-hero-desktop.png";
   if (window.innerWidth <= 400) {
     heroImage.setAttribute("src", mobileImage);
   } else {
