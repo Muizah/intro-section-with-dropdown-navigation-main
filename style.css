@@ -216,15 +216,19 @@ a:hover {
   }
 
   .left_container a h3 {
-    width: 50%;
+    width: 40%;
     margin-bottom: 3rem;
   }
 
   .left_container img {
-    width: 200%;
+    width: 100%;
   }
 
   footer {
     display: none;
+  }
+
+  body {
+    margin: 0;
   }
 }
