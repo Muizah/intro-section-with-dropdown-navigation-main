@@ -193,6 +193,9 @@ a:hover {
   .container {
     flex-direction: column-reverse;
     margin-top: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .right_container img {
@@ -212,12 +215,13 @@ a:hover {
 
   .left_container p {
     padding-bottom: 2rem;
-    font-size: 80%;
+    font-size: 115%;
   }
 
   .left_container a h3 {
     width: 40%;
     margin-bottom: 3rem;
+    margin-left: 7rem;
   }
 
   .left_container img {

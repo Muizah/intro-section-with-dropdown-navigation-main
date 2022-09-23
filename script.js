@@ -50,8 +50,6 @@ function changeHeroByScreenSize() {
   var desktopImage = "./images/image-hero-desktop.png";
   if (window.innerWidth <= 400) {
     heroImage.setAttribute("src", mobileImage);
-  } else {
-    heroImage.setAttribute("src", desktopImage);
   }
 }
 
