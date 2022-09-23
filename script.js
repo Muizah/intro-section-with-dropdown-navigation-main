@@ -3,6 +3,46 @@ const companyBtn = document.getElementById("company");
 const featuresDropdown = document.getElementById("sub_features");
 const companyDropdown = document.getElementById("sub_company");
 const arrows = document.getElementsByClassName("arrow_down");
+const mobileMenu = document.getElementById("menu");
+const mobileDiv = document.getElementsByClassName("mobile");
+const closeMenu = document.getElementById("close_menu");
+const featuresBtnMobile = document.getElementById("features_mobile");
+const companyBtnMobile = document.getElementById("company_mobile");
+const featuresDropdownMobile = document.getElementById("sub_features_mobile");
+const companyDropdownMobile = document.getElementById("sub_company_mobile");
+
+document.addEventListener("touchend", function (event) {
+  const isClickInsideFeaturesDropdownMobile = featuresDropdownMobile.contains(
+    event.target
+  );
+  const isClickInsideCompanyDropdownMobile = companyDropdownMobile.contains(
+    event.target
+  );
+  const isClickOutsideCompanyBtnMobile = !companyBtnMobile.contains(
+    event.target
+  );
+  const isClickOutsideFeaturesBtnMobile = !featuresBtnMobile.contains(
+    event.target
+  );
+  const isClickOutsideFeaturesDropdownMobile =
+    !isClickInsideFeaturesDropdownMobile;
+  const isClickOutsideCompanyDropdownMobile =
+    !isClickInsideCompanyDropdownMobile;
+
+  if (isClickOutsideFeaturesBtnMobile && isClickOutsideFeaturesDropdownMobile) {
+    featuresDropdownMobile.style.display = "none";
+    Array.from(arrows).forEach((arrow) => {
+      arrow.setAttribute("src", "images/icon-arrow-down.svg");
+    });
+  }
+
+  if (isClickOutsideCompanyBtnMobile && isClickOutsideCompanyDropdownMobile) {
+    companyDropdownMobile.style.display = "none";
+    Array.from(arrows).forEach((arrow) => {
+      arrow.setAttribute("src", "images/icon-arrow-down.svg");
+    });
+  }
+});
 
 featuresBtn.addEventListener("mouseover", () => {
   featuresDropdown.style.display = "flex";
@@ -39,7 +79,7 @@ document.addEventListener("mouseout", function (event) {
       arrow.setAttribute("src", "images/icon-arrow-down.svg");
     });
   }
-  console.log(isClickOutsideFeaturesBtn, isClickOutsideFeaturesDropdown);
+  // console.log(isClickOutsideFeaturesBtn, isClickOutsideFeaturesDropdown);
 });
 
 var heroImage = document.querySelector("#heroImage");
@@ -54,3 +94,8 @@ function changeHeroByScreenSize() {
 }
 
 window.addEventListener("resize", changeHeroByScreenSize);
+
+mobileMenu.addEventListener("click", () => {
+  mobileDiv[0].style.display = "flex";
+  mobileMenu.style.display = "none";
+});

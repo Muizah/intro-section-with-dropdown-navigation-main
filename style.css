@@ -41,6 +41,7 @@ nav,
 
 #menu {
   display: none;
+  cursor: pointer;
 }
 
 .container {
@@ -188,6 +189,10 @@ a:hover {
   gap: 3rem;
 }
 
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 400px) {
   .navbar_right,
   .without_logo {
@@ -242,5 +247,14 @@ a:hover {
 
   #menu {
     display: flex;
+  }
+
+  .mobile {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #close_menu {
+    width: 32px;
   }
 }
