@@ -39,6 +39,10 @@ nav,
   align-items: center;
 }
 
+#menu {
+  display: none;
+}
+
 .container {
   margin-top: 5rem;
   width: 100%;
@@ -234,5 +238,9 @@ a:hover {
 
   body {
     margin: 0;
+  }
+
+  #menu {
+    display: flex;
   }
 }
